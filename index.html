@@ -1,1 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VideoTube - Clon de YouTube</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #ffffff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+        }
+        nav {
+            width: 240px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        main {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .video-card {
+            width: 250px;
+        }
+        .video-card img {
+            width: 100%;
+            height: 140px;
+            object-fit: cover;
+        }
+        .search-bar {
+            flex: 1;
+            max-width: 600px;
+            margin: 0 20px;
+        }
+        .search-bar input {
+            width: 100%;
+            padding: 10px;
+        }
+        .featured-content {
+            margin-bottom: 30px;
+        }
+        .featured-content img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>VideoTube</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar">
+        </div>
+        <div class="user-actions">
+            <button>Iniciar sesión</button>
+        </div>
+    </header>
 
+    <div style="display: flex;">
+        <nav>
+            <h3>Menú principal</h3>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Tendencias</a></li>
+                <li><a href="#">Suscripciones</a></li>
+            </ul>
+            <h3>Biblioteca</h3>
+            <ul>
+                <li><a href="#">Historial</a></li>
+                <li><a href="#">Mis videos</a></li>
+                <li><a href="#">Ver más tarde</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section class="featured-content">
+                <h2>Contenido destacado</h2>
+                <img src="/placeholder.svg?height=400&width=800" alt="Video destacado">
+                <h3>Título del video destacado</h3>
+                <p>Descripción del video destacado...</p>
+            </section>
+
+            <section>
+                <h2>Tendencias</h2>
+                <div class="content">
+                    <div class="video-card">
+                        <img src="/placeholder.svg?height=140&width=250" alt="Thumbnail">
+                        <h3>Título del video</h3>
+                        <p>Nombre del canal</p>
+                    </div>
+                    <div class="video-card">
+                        <img src="/placeholder.svg?height=140&width=250" alt="Thumbnail">
+                        <h3>Título del video</h3>
+                        <p>Nombre del canal</p>
+                    </div>
+                    <div class="video-card">
+                        <img src="/placeholder.svg?height=140&width=250" alt="Thumbnail">
+                        <h3>Título del video</h3>
+                        <p>Nombre del canal</p>
+                    </div>
+                    <div class="video-card">
+                        <img src="/placeholder.svg?height=140&width=250" alt="Thumbnail">
+                        <h3>Título del video</h3>
+                        <p>Nombre del canal</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Música</h2>
+                <div class="content">
+                    <div class="video-card">
+                        <img src="/placeholder.svg?height=140&width=250" alt="Thumbnail">
+                        <h3>Título del video</h3>
+                        <p>Nombre del canal</p>
+                    </div>
+                    <div class="video-card">
+                        <img src="/placeholder.svg?height=140&width=250" alt="Thumbnail">
+                        <h3>Título del video</h3>
+                        <p>Nombre del canal</p>
+                    </div>
+                    <div class="video-card">
+                        <img src="/placeholder.svg?height=140&width=250" alt="Thumbnail">
+                        <h3>Título del video</h3>
+                        <p>Nombre del canal</p>
+                    </div>
+                    <div class="video-card">
+                        <img src="/placeholder.svg?height=140&width=250" alt="Thumbnail">
+                        <h3>Título del video</h3>
+                        <p>Nombre del canal</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Juegos</h2>
+                <div class="content">
+                    <div class="video-card">
+                        <img src="/placeholder.svg?height=140&width=250" alt="Thumbnail">
+                        <h3>Título del video</h3>
+                        <p>Nombre del canal</p>
+                    </div>
+                    <div class="video-card">
+                        <img src="/placeholder.svg?height=140&width=250" alt="Thumbnail">
+                        <h3>Título del video</h3>
+                        <p>Nombre del canal</p>
+                    </div>
+                    <div class="video-card">
+                        <img src="/placeholder.svg?height=140&width=250" alt="Thumbnail">
+                        <h3>Título del video</h3>
+                        <p>Nombre del canal</p>
+                    </div>
+                    <div class="video-card">
+                        <img src="/placeholder.svg?height=140&width=250" alt="Thumbnail">
+                        <h3>Título del video</h3>
+                        <p>Nombre del canal</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer style="background-color: #f9f9f9; padding: 20px; text-align: center;">
+        <p>&copy; 2024-2025. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
